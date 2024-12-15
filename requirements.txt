@@ -1,2 +1,3 @@
 graphviz
 jupyterlite-core>=0.4.5
+jupyterlab-mermaid>=4.0.0
