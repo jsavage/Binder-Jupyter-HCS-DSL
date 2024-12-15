@@ -4,7 +4,16 @@ from IPython.display import display, HTML
 @register_cell_magic
 def hcs(line, cell):
     mermaid_code = convert_hcs_to_mermaid(cell)
-    display(HTML(f'<div class="mermaid">\n{mermaid_code}\n</div>'))
+    html_output = f'''
+    <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({{ startOnLoad: true }});
+    </script>
+    <div class="mermaid">
+    {mermaid_code}
+    </div>
+    '''
+    display(HTML(html_output))
 
 def convert_hcs_to_mermaid(hcs_input):
     mermaid_lines = ['graph TD', 'linkStyle default interpolate basis']
