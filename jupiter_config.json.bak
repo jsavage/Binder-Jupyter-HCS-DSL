@@ -1,0 +1,17 @@
+{
+    "LiteBuildConfig": {
+        "piplite_urls": [
+            "https://cdn.jsdelivr.net/pypi/graphviz/graphviz-0.20.1-py2.py3-none-any.whl"
+        ],
+        "contents": [
+            {
+                "source": "content/startup/00-hcs-processor.py",
+                "destination": "_output/startup/00-hcs-processor.py"
+            },
+            {
+                "source": "content/static/mermaid.min.js",
+                "destination": "_output/static/mermaid.min.js"
+            }
+        ]
+    }
+}

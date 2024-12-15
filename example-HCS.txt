@@ -1,0 +1,4 @@
+%%hcs
+person microwave: open close start stop / beep
+microwave [ magnetron ]
+magnetron food: heat

@@ -1,0 +1,9 @@
+Set-Content -Path ".\_output\api\contents\all.json" -Value '{
+    "content": [
+        {
+            "name": "test_hcs.ipynb",
+            "path": "test_hcs.ipynb",
+            "type": "notebook"
+        }
+    ]
+}'

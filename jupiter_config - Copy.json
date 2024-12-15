@@ -1,0 +1,11 @@
+{
+    "LiteBuildConfig": {
+        "piplite_urls": ["https://cdn.jsdelivr.net/pypi/graphviz/graphviz-0.20.1-py2.py3-none-any.whl"],
+        "contents": [
+            {
+                "source": "kernel/hcs_kernel.py",
+                "destination": "pypi/hcs_processor"
+            }
+        ]
+    }
+}

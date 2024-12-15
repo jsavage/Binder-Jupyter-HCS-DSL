@@ -1,0 +1,23 @@
+{
+    "jupyter-lite-schema-version": 0,
+    "jupyter-config-data": {
+        "kernelspecs": {
+            "python": {
+                "name": "python",
+                "display_name": "Python (Pyodide)",
+                "language": "python"
+            }
+        },
+        "startupScripts": [
+            "startup/00-hcs-processor.py"
+        ],
+        "labextensions": {
+            "@jupyterlab/mermaid": true
+        },
+        "contentSecurityPolicy": {
+            "script-src": ["'self'", "'unsafe-inline'", "'unsafe-eval'", "unpkg.com"],
+            "style-src": ["'self'", "'unsafe-inline'"],
+            "connect-src": ["'self'", "unpkg.com"]
+        }
+    }
+}
