@@ -1,6 +1,12 @@
 {
     "jupyter-lite-schema-version": 0,
     "jupyter-config-data": {
+        "mermaid": {
+            "initialize": {
+                "startOnLoad": true,
+                "theme": "default"
+            }
+        },
         "kernelspecs": {
             "python": {
                 "name": "python",
@@ -9,15 +15,7 @@
             }
         },
         "startupScripts": [
-            "startup/00-hcs-processor.py"
-        ],
-        "labextensions": {
-            "@jupyterlab/mermaid": true
-        },
-        "contentSecurityPolicy": {
-            "script-src": ["'self'", "'unsafe-inline'", "'unsafe-eval'", "unpkg.com", "cdnjs.cloudflare.com"],
-            "style-src": ["'self'", "'unsafe-inline'"],
-            "connect-src": ["'self'", "unpkg.com", "cdnjs.cloudflare.com"]
-        }
+            "startup/hcs_magic.py"
+        ]
     }
 }
