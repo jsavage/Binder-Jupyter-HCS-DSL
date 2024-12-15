@@ -2,9 +2,7 @@
     "jupyter-lite-schema-version": 0,
     "jupyter-config-data": {
         "disabledExtensions": [],
-        "federated_extensions": [
-            "https://unpkg.com/@jupyterlab/mermaid@4.0.0/dist/extension.js"
-        ],
+        "federated_extensions": [],
         "kernelspecs": {
             "python": {
                 "name": "python",
@@ -13,6 +11,7 @@
             }
         },
         "startupScripts": [
+            "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js",
             "startup/hcs_magic.py"
         ]
     }
